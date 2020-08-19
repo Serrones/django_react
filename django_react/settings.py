@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'leads.apps.LeadsConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -124,5 +125,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-import dynaconf
-settings = dynaconf.DjangoDynaconf(__name__)
+# REST_FRAMEWORK = {
+#     'DEFAULT_RENDERER_CLASSES': (
+#         'rest_framework.renderers.JSONRenderer',
+#     )
+# }

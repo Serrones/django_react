@@ -6,3 +6,6 @@ coverage-html:
 
 coverage-report:
 	coverage report
+
+run:
+	python manage.py runserver
